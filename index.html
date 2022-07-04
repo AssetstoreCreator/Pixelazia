@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1344 height=756></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -27,11 +27,11 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGL2.loader.js";
+      var loaderUrl = buildUrl + "/WebGL3.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGL2.data",
-        frameworkUrl: buildUrl + "/WebGL2.framework.js",
-        codeUrl: buildUrl + "/WebGL2.wasm",
+        dataUrl: buildUrl + "/WebGL3.data",
+        frameworkUrl: buildUrl + "/WebGL3.framework.js",
+        codeUrl: buildUrl + "/WebGL3.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "PixelMonsters",
@@ -62,8 +62,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1344px";
+        canvas.style.height = "756px";
       }
       loadingBar.style.display = "block";
 
